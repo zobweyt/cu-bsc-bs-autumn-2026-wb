@@ -1,0 +1,2442 @@
+[
+  {
+    "id": "1",
+    "title": "Механическая клавиатура",
+    "brand": "KeyPro",
+    "price": 9290,
+    "image": "https://picsum.photos/seed/wbshop-1/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Беспроводная клавиатура",
+    "brand": "KeyPro",
+    "price": 4750,
+    "image": "https://picsum.photos/seed/wbshop-2/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Игровая клавиатура с подсветкой",
+    "brand": "GameForge",
+    "price": 12020,
+    "image": "https://picsum.photos/seed/wbshop-3/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Низкопрофильная клавиатура",
+    "brand": "TypeAir",
+    "price": 8810,
+    "image": "https://picsum.photos/seed/wbshop-4/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Клавиатура TKL",
+    "brand": "KeyPro",
+    "price": 5220,
+    "image": "https://picsum.photos/seed/wbshop-5/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Эргономичная клавиатура",
+    "brand": "TypeAir",
+    "price": 7350,
+    "image": "https://picsum.photos/seed/wbshop-6/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Клавиатура с тачпадом",
+    "brand": "ClickMate",
+    "price": 7220,
+    "image": "https://picsum.photos/seed/wbshop-7/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Мини-клавиатура 60%",
+    "brand": "GameForge",
+    "price": 6460,
+    "image": "https://picsum.photos/seed/wbshop-8/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Клавиатура для планшета",
+    "brand": "TabKeys",
+    "price": 4850,
+    "image": "https://picsum.photos/seed/wbshop-9/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Проводная офисная клавиатура",
+    "brand": "OfficeLine",
+    "price": 3470,
+    "image": "https://picsum.photos/seed/wbshop-10/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Клавиатура с hush-переключателями",
+    "brand": "KeyPro",
+    "price": 9570,
+    "image": "https://picsum.photos/seed/wbshop-11/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Складная силиконовая клавиатура",
+    "brand": "FlexType",
+    "price": 4800,
+    "image": "https://picsum.photos/seed/wbshop-12/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Ретро-клавиатура",
+    "brand": "RetroKeys",
+    "price": 12670,
+    "image": "https://picsum.photos/seed/wbshop-13/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Клавиатура с экраном",
+    "brand": "KeyPro",
+    "price": 17370,
+    "image": "https://picsum.photos/seed/wbshop-14/600/750",
+    "tags": [
+      "клавиатура",
+      "периферия"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Беспроводная мышь",
+    "brand": "ClickMate",
+    "price": 2170,
+    "image": "https://picsum.photos/seed/wbshop-15/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Игровая мышь 16000 DPI",
+    "brand": "GameForge",
+    "price": 4360,
+    "image": "https://picsum.photos/seed/wbshop-16/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Вертикальная эргономичная мышь",
+    "brand": "ErgoGrip",
+    "price": 6200,
+    "image": "https://picsum.photos/seed/wbshop-17/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Бесшумная мышь",
+    "brand": "ClickMate",
+    "price": 2550,
+    "image": "https://picsum.photos/seed/wbshop-18/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Мышь с подсветкой RGB",
+    "brand": "GameForge",
+    "price": 2830,
+    "image": "https://picsum.photos/seed/wbshop-19/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Трекбол",
+    "brand": "ErgoGrip",
+    "price": 7210,
+    "image": "https://picsum.photos/seed/wbshop-20/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "21",
+    "title": "Мышь для ноутбука компактная",
+    "brand": "TravelMouse",
+    "price": 1510,
+    "image": "https://picsum.photos/seed/wbshop-21/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Проводная офисная мышь",
+    "brand": "OfficeLine",
+    "price": 2390,
+    "image": "https://picsum.photos/seed/wbshop-22/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Мышь с дополнительными кнопками",
+    "brand": "GameForge",
+    "price": 5150,
+    "image": "https://picsum.photos/seed/wbshop-23/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Мышь-презентер",
+    "brand": "OfficeLine",
+    "price": 3780,
+    "image": "https://picsum.photos/seed/wbshop-24/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Леворукая мышь",
+    "brand": "ErgoGrip",
+    "price": 5870,
+    "image": "https://picsum.photos/seed/wbshop-25/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Мышь с ковриком в комплекте",
+    "brand": "ClickMate",
+    "price": 2290,
+    "image": "https://picsum.photos/seed/wbshop-26/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Ультралёгкая игровая мышь",
+    "brand": "GameForge",
+    "price": 8260,
+    "image": "https://picsum.photos/seed/wbshop-27/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Детская мышь с ушками",
+    "brand": "KidTech",
+    "price": 2080,
+    "image": "https://picsum.photos/seed/wbshop-28/600/750",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ]
+  },
+  {
+    "id": "29",
+    "title": "Монитор 24 Full HD",
+    "brand": "ViewMax",
+    "price": 18400,
+    "image": "https://picsum.photos/seed/wbshop-29/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Монитор 27 4K",
+    "brand": "ViewMax",
+    "price": 39910,
+    "image": "https://picsum.photos/seed/wbshop-30/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Игровой монитор 144 Гц",
+    "brand": "GameForge",
+    "price": 21240,
+    "image": "https://picsum.photos/seed/wbshop-31/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Ультраширокий монитор 34",
+    "brand": "ViewMax",
+    "price": 63610,
+    "image": "https://picsum.photos/seed/wbshop-32/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Монитор 22 офисный",
+    "brand": "OfficeLine",
+    "price": 11970,
+    "image": "https://picsum.photos/seed/wbshop-33/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "34",
+    "title": "Портативный монитор 15.6",
+    "brand": "TravelView",
+    "price": 19040,
+    "image": "https://picsum.photos/seed/wbshop-34/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "35",
+    "title": "Монитор с HDR",
+    "brand": "ViewMax",
+    "price": 25990,
+    "image": "https://picsum.photos/seed/wbshop-35/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "36",
+    "title": "Изогнутый монитор 27",
+    "brand": "GameForge",
+    "price": 27500,
+    "image": "https://picsum.photos/seed/wbshop-36/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Монитор для дизайна 4K",
+    "brand": "ColorPro",
+    "price": 36880,
+    "image": "https://picsum.photos/seed/wbshop-37/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "38",
+    "title": "Сенсорный монитор",
+    "brand": "TouchView",
+    "price": 33380,
+    "image": "https://picsum.photos/seed/wbshop-38/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "39",
+    "title": "Монитор 32 4K",
+    "brand": "ViewMax",
+    "price": 38430,
+    "image": "https://picsum.photos/seed/wbshop-39/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "40",
+    "title": "Кронштейн для монитора",
+    "brand": "DeskFit",
+    "price": 4460,
+    "image": "https://picsum.photos/seed/wbshop-40/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "41",
+    "title": "Подставка под монитор",
+    "brand": "DeskFit",
+    "price": 4120,
+    "image": "https://picsum.photos/seed/wbshop-41/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "42",
+    "title": "Экранная лампа для монитора",
+    "brand": "LightBar",
+    "price": 4710,
+    "image": "https://picsum.photos/seed/wbshop-42/600/750",
+    "tags": [
+      "монитор",
+      "экран"
+    ]
+  },
+  {
+    "id": "43",
+    "title": "Наушники с шумоподавлением",
+    "brand": "SoundLab",
+    "price": 21050,
+    "image": "https://picsum.photos/seed/wbshop-43/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "44",
+    "title": "Беспроводные наушники",
+    "brand": "SoundLab",
+    "price": 6180,
+    "image": "https://picsum.photos/seed/wbshop-44/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "45",
+    "title": "TWS-наушники",
+    "brand": "AirBeats",
+    "price": 8820,
+    "image": "https://picsum.photos/seed/wbshop-45/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "46",
+    "title": "Игровая гарнитура",
+    "brand": "GameForge",
+    "price": 8130,
+    "image": "https://picsum.photos/seed/wbshop-46/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "47",
+    "title": "Накладные наушники",
+    "brand": "SoundLab",
+    "price": 9710,
+    "image": "https://picsum.photos/seed/wbshop-47/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "48",
+    "title": "Спортивные наушники",
+    "brand": "RunSound",
+    "price": 7650,
+    "image": "https://picsum.photos/seed/wbshop-48/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "49",
+    "title": "Детские наушники",
+    "brand": "KidTech",
+    "price": 3720,
+    "image": "https://picsum.photos/seed/wbshop-49/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "50",
+    "title": "Студийные мониторные наушники",
+    "brand": "ProAudio",
+    "price": 16680,
+    "image": "https://picsum.photos/seed/wbshop-50/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "51",
+    "title": "Bluetooth-колонка",
+    "brand": "BoomBox",
+    "price": 5030,
+    "image": "https://picsum.photos/seed/wbshop-51/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "52",
+    "title": "Умная колонка",
+    "brand": "HomeVoice",
+    "price": 11930,
+    "image": "https://picsum.photos/seed/wbshop-52/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "53",
+    "title": "USB-микрофон",
+    "brand": "VoiceBox",
+    "price": 10820,
+    "image": "https://picsum.photos/seed/wbshop-53/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "54",
+    "title": "Микрофон-петличка",
+    "brand": "VoiceBox",
+    "price": 5250,
+    "image": "https://picsum.photos/seed/wbshop-54/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "55",
+    "title": "Саундбар",
+    "brand": "SoundLab",
+    "price": 18820,
+    "image": "https://picsum.photos/seed/wbshop-55/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "56",
+    "title": "Виниловый проигрыватель",
+    "brand": "RetroSound",
+    "price": 35230,
+    "image": "https://picsum.photos/seed/wbshop-56/600/750",
+    "tags": [
+      "наушники",
+      "аудио"
+    ]
+  },
+  {
+    "id": "57",
+    "title": "Ноутбук 15.6 офисный",
+    "brand": "NoteBook",
+    "price": 43970,
+    "image": "https://picsum.photos/seed/wbshop-57/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "58",
+    "title": "Игровой ноутбук 17",
+    "brand": "GameForge",
+    "price": 134850,
+    "image": "https://picsum.photos/seed/wbshop-58/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "59",
+    "title": "Ультрабук 14",
+    "brand": "AirBook",
+    "price": 128310,
+    "image": "https://picsum.photos/seed/wbshop-59/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "60",
+    "title": "Планшет 10 дюймов",
+    "brand": "TabLine",
+    "price": 21260,
+    "image": "https://picsum.photos/seed/wbshop-60/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "61",
+    "title": "Планшет с пером",
+    "brand": "TabLine",
+    "price": 53090,
+    "image": "https://picsum.photos/seed/wbshop-61/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "62",
+    "title": "Чехол для ноутбука",
+    "brand": "CaseMate",
+    "price": 1630,
+    "image": "https://picsum.photos/seed/wbshop-62/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "63",
+    "title": "Подставка для ноутбука",
+    "brand": "LapLift",
+    "price": 5640,
+    "image": "https://picsum.photos/seed/wbshop-63/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "64",
+    "title": "Док-станция USB-C",
+    "brand": "PortHub",
+    "price": 8080,
+    "image": "https://picsum.photos/seed/wbshop-64/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "65",
+    "title": "Внешний SSD 1 ТБ",
+    "brand": "DataVault",
+    "price": 12060,
+    "image": "https://picsum.photos/seed/wbshop-65/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "66",
+    "title": "Внешний жёсткий диск 2 ТБ",
+    "brand": "DataVault",
+    "price": 9460,
+    "image": "https://picsum.photos/seed/wbshop-66/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "67",
+    "title": "USB-хаб на 7 портов",
+    "brand": "PortHub",
+    "price": 4700,
+    "image": "https://picsum.photos/seed/wbshop-67/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "68",
+    "title": "Кабель HDMI 2 м",
+    "brand": "CablePro",
+    "price": 2070,
+    "image": "https://picsum.photos/seed/wbshop-68/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "69",
+    "title": "Рюкзак для ноутбука",
+    "brand": "UrbanPack",
+    "price": 7950,
+    "image": "https://picsum.photos/seed/wbshop-69/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "70",
+    "title": "Охлаждающая подставка",
+    "brand": "CoolPad",
+    "price": 4080,
+    "image": "https://picsum.photos/seed/wbshop-70/600/750",
+    "tags": [
+      "ноутбук",
+      "планшет",
+      "компьютер"
+    ]
+  },
+  {
+    "id": "71",
+    "title": "Смартфон 128 ГБ",
+    "brand": "PhoneStar",
+    "price": 44050,
+    "image": "https://picsum.photos/seed/wbshop-71/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "72",
+    "title": "Смартфон 256 ГБ",
+    "brand": "PhoneStar",
+    "price": 58960,
+    "image": "https://picsum.photos/seed/wbshop-72/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "73",
+    "title": "Защитное стекло",
+    "brand": "CaseMate",
+    "price": 1060,
+    "image": "https://picsum.photos/seed/wbshop-73/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "74",
+    "title": "Чехол силиконовый",
+    "brand": "CaseMate",
+    "price": 1900,
+    "image": "https://picsum.photos/seed/wbshop-74/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "75",
+    "title": "Умные часы",
+    "brand": "WristTech",
+    "price": 14110,
+    "image": "https://picsum.photos/seed/wbshop-75/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "76",
+    "title": "Фитнес-браслет",
+    "brand": "FitBand",
+    "price": 4250,
+    "image": "https://picsum.photos/seed/wbshop-76/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "77",
+    "title": "Беспроводная зарядка",
+    "brand": "ChargeUp",
+    "price": 2900,
+    "image": "https://picsum.photos/seed/wbshop-77/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "78",
+    "title": "Powerbank 20000 мАч",
+    "brand": "ChargeUp",
+    "price": 3720,
+    "image": "https://picsum.photos/seed/wbshop-78/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "79",
+    "title": "Держатель для телефона",
+    "brand": "HoldIt",
+    "price": 1180,
+    "image": "https://picsum.photos/seed/wbshop-79/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "80",
+    "title": "Селфи-палка",
+    "brand": "CamEye",
+    "price": 2950,
+    "image": "https://picsum.photos/seed/wbshop-80/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "81",
+    "title": "Умная розетка",
+    "brand": "HomeVoice",
+    "price": 2240,
+    "image": "https://picsum.photos/seed/wbshop-81/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "82",
+    "title": "Датчик температуры",
+    "brand": "HomeVoice",
+    "price": 3320,
+    "image": "https://picsum.photos/seed/wbshop-82/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "83",
+    "title": "Электробритва",
+    "brand": "GroomPro",
+    "price": 9040,
+    "image": "https://picsum.photos/seed/wbshop-83/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "84",
+    "title": "Фен с ионизацией",
+    "brand": "GroomPro",
+    "price": 8490,
+    "image": "https://picsum.photos/seed/wbshop-84/600/750",
+    "tags": [
+      "смартфон",
+      "телефон",
+      "гаджет"
+    ]
+  },
+  {
+    "id": "85",
+    "title": "Веб-камера 1080p",
+    "brand": "CamEye",
+    "price": 8070,
+    "image": "https://picsum.photos/seed/wbshop-85/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "86",
+    "title": "Веб-камера 4K",
+    "brand": "CamEye",
+    "price": 11920,
+    "image": "https://picsum.photos/seed/wbshop-86/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "87",
+    "title": "Экшн-камера",
+    "brand": "ActionCam",
+    "price": 25450,
+    "image": "https://picsum.photos/seed/wbshop-87/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "88",
+    "title": "Квадрокоптер с камерой",
+    "brand": "SkyFly",
+    "price": 22970,
+    "image": "https://picsum.photos/seed/wbshop-88/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "89",
+    "title": "Штатив для телефона",
+    "brand": "HoldIt",
+    "price": 1780,
+    "image": "https://picsum.photos/seed/wbshop-89/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "90",
+    "title": "Кольцевая лампа",
+    "brand": "LightBar",
+    "price": 4600,
+    "image": "https://picsum.photos/seed/wbshop-90/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "91",
+    "title": "Фотоаппарат беззеркальный",
+    "brand": "PhotoPro",
+    "price": 94230,
+    "image": "https://picsum.photos/seed/wbshop-91/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "92",
+    "title": "Объектив 50 мм",
+    "brand": "PhotoPro",
+    "price": 31730,
+    "image": "https://picsum.photos/seed/wbshop-92/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "93",
+    "title": "Сумка для камеры",
+    "brand": "CaseMate",
+    "price": 6850,
+    "image": "https://picsum.photos/seed/wbshop-93/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "94",
+    "title": "Карта памяти 256 ГБ",
+    "brand": "DataVault",
+    "price": 3730,
+    "image": "https://picsum.photos/seed/wbshop-94/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "95",
+    "title": "Картридер",
+    "brand": "PortHub",
+    "price": 1360,
+    "image": "https://picsum.photos/seed/wbshop-95/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "96",
+    "title": "Фоторюкзак",
+    "brand": "UrbanPack",
+    "price": 10980,
+    "image": "https://picsum.photos/seed/wbshop-96/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "97",
+    "title": "Стабилизатор для телефона",
+    "brand": "HoldIt",
+    "price": 12290,
+    "image": "https://picsum.photos/seed/wbshop-97/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "98",
+    "title": "Фон для съёмки",
+    "brand": "StudioBox",
+    "price": 2680,
+    "image": "https://picsum.photos/seed/wbshop-98/600/750",
+    "tags": [
+      "камера",
+      "фото",
+      "дрон"
+    ]
+  },
+  {
+    "id": "99",
+    "title": "Настольная лампа",
+    "brand": "LightBar",
+    "price": 5400,
+    "image": "https://picsum.photos/seed/wbshop-99/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "Торшер",
+    "brand": "HomeLight",
+    "price": 6770,
+    "image": "https://picsum.photos/seed/wbshop-100/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "101",
+    "title": "Гирлянда",
+    "brand": "HomeLight",
+    "price": 2930,
+    "image": "https://picsum.photos/seed/wbshop-101/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "102",
+    "title": "Умная лампочка",
+    "brand": "HomeVoice",
+    "price": 2400,
+    "image": "https://picsum.photos/seed/wbshop-102/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "103",
+    "title": "Электрочайник",
+    "brand": "KitchenPro",
+    "price": 5910,
+    "image": "https://picsum.photos/seed/wbshop-103/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "104",
+    "title": "Сковорода с антипригарным покрытием",
+    "brand": "KitchenPro",
+    "price": 6520,
+    "image": "https://picsum.photos/seed/wbshop-104/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "105",
+    "title": "Кастрюля 5 л",
+    "brand": "KitchenPro",
+    "price": 8460,
+    "image": "https://picsum.photos/seed/wbshop-105/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "106",
+    "title": "Набор ножей",
+    "brand": "KitchenPro",
+    "price": 8190,
+    "image": "https://picsum.photos/seed/wbshop-106/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "107",
+    "title": "Робот-пылесос",
+    "brand": "CleanBot",
+    "price": 33910,
+    "image": "https://picsum.photos/seed/wbshop-107/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "108",
+    "title": "Вертикальный пылесос",
+    "brand": "CleanBot",
+    "price": 29210,
+    "image": "https://picsum.photos/seed/wbshop-108/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "109",
+    "title": "Увлажнитель воздуха",
+    "brand": "AirHome",
+    "price": 7560,
+    "image": "https://picsum.photos/seed/wbshop-109/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "110",
+    "title": "Ароматическая свеча",
+    "brand": "CozyHome",
+    "price": 1240,
+    "image": "https://picsum.photos/seed/wbshop-110/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "111",
+    "title": "Плед флисовый",
+    "brand": "CozyHome",
+    "price": 2750,
+    "image": "https://picsum.photos/seed/wbshop-111/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "112",
+    "title": "Декоративная подушка",
+    "brand": "CozyHome",
+    "price": 2460,
+    "image": "https://picsum.photos/seed/wbshop-112/600/750",
+    "tags": [
+      "лампа",
+      "дом",
+      "кухня",
+      "мебель"
+    ]
+  },
+  {
+    "id": "113",
+    "title": "Футболка оверсайз",
+    "brand": "UrbanWear",
+    "price": 2140,
+    "image": "https://picsum.photos/seed/wbshop-113/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "114",
+    "title": "Футболка базовая 2 шт",
+    "brand": "UrbanWear",
+    "price": 1650,
+    "image": "https://picsum.photos/seed/wbshop-114/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "115",
+    "title": "Худи с капюшоном",
+    "brand": "StreetLine",
+    "price": 7280,
+    "image": "https://picsum.photos/seed/wbshop-115/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "116",
+    "title": "Свитшот",
+    "brand": "StreetLine",
+    "price": 2950,
+    "image": "https://picsum.photos/seed/wbshop-116/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "117",
+    "title": "Джинсы прямые",
+    "brand": "DenimClub",
+    "price": 6240,
+    "image": "https://picsum.photos/seed/wbshop-117/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "118",
+    "title": "Джинсы mom",
+    "brand": "DenimClub",
+    "price": 5400,
+    "image": "https://picsum.photos/seed/wbshop-118/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "119",
+    "title": "Куртка демисезонная",
+    "brand": "NorthWind",
+    "price": 9310,
+    "image": "https://picsum.photos/seed/wbshop-119/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "120",
+    "title": "Ветровка",
+    "brand": "NorthWind",
+    "price": 4290,
+    "image": "https://picsum.photos/seed/wbshop-120/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "121",
+    "title": "Платье летнее",
+    "brand": "SummerDress",
+    "price": 6220,
+    "image": "https://picsum.photos/seed/wbshop-121/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "122",
+    "title": "Рубашка льняная",
+    "brand": "UrbanWear",
+    "price": 6570,
+    "image": "https://picsum.photos/seed/wbshop-122/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "123",
+    "title": "Шорты спортивные",
+    "brand": "SportFit",
+    "price": 2270,
+    "image": "https://picsum.photos/seed/wbshop-123/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "124",
+    "title": "Леггинсы",
+    "brand": "SportFit",
+    "price": 4930,
+    "image": "https://picsum.photos/seed/wbshop-124/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "125",
+    "title": "Пальто шерстяное",
+    "brand": "NorthWind",
+    "price": 26930,
+    "image": "https://picsum.photos/seed/wbshop-125/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "126",
+    "title": "Кардиган",
+    "brand": "CozyKnit",
+    "price": 8040,
+    "image": "https://picsum.photos/seed/wbshop-126/600/750",
+    "tags": [
+      "футболка",
+      "одежда",
+      "джинсы",
+      "куртка"
+    ]
+  },
+  {
+    "id": "127",
+    "title": "Кроссовки беговые",
+    "brand": "RunStep",
+    "price": 7890,
+    "image": "https://picsum.photos/seed/wbshop-127/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "128",
+    "title": "Кроссовки повседневные",
+    "brand": "UrbanStep",
+    "price": 7930,
+    "image": "https://picsum.photos/seed/wbshop-128/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "129",
+    "title": "Кеды текстильные",
+    "brand": "UrbanStep",
+    "price": 5900,
+    "image": "https://picsum.photos/seed/wbshop-129/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "130",
+    "title": "Ботинки осенние",
+    "brand": "NorthStep",
+    "price": 9530,
+    "image": "https://picsum.photos/seed/wbshop-130/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "131",
+    "title": "Ботинки зимние",
+    "brand": "NorthStep",
+    "price": 8440,
+    "image": "https://picsum.photos/seed/wbshop-131/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "132",
+    "title": "Сандалии",
+    "brand": "SummerStep",
+    "price": 4340,
+    "image": "https://picsum.photos/seed/wbshop-132/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "133",
+    "title": "Шлепанцы",
+    "brand": "SummerStep",
+    "price": 1880,
+    "image": "https://picsum.photos/seed/wbshop-133/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "134",
+    "title": "Туфли офисные",
+    "brand": "ClassicStep",
+    "price": 6700,
+    "image": "https://picsum.photos/seed/wbshop-134/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "135",
+    "title": "Кроссовки детские",
+    "brand": "KidStep",
+    "price": 6100,
+    "image": "https://picsum.photos/seed/wbshop-135/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "136",
+    "title": "Футбольные бутсы",
+    "brand": "SportKick",
+    "price": 5670,
+    "image": "https://picsum.photos/seed/wbshop-136/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "137",
+    "title": "Тапочки домашние",
+    "brand": "CozyStep",
+    "price": 2240,
+    "image": "https://picsum.photos/seed/wbshop-137/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "138",
+    "title": "Резиновые сапоги",
+    "brand": "NorthStep",
+    "price": 3280,
+    "image": "https://picsum.photos/seed/wbshop-138/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "139",
+    "title": "Челси",
+    "brand": "ClassicStep",
+    "price": 10210,
+    "image": "https://picsum.photos/seed/wbshop-139/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "140",
+    "title": "Мокасины",
+    "brand": "ClassicStep",
+    "price": 8420,
+    "image": "https://picsum.photos/seed/wbshop-140/600/750",
+    "tags": [
+      "кроссовки",
+      "обувь",
+      "ботинки"
+    ]
+  },
+  {
+    "id": "141",
+    "title": "Крем для лица увлажняющий",
+    "brand": "GlowLab",
+    "price": 1310,
+    "image": "https://picsum.photos/seed/wbshop-141/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "142",
+    "title": "Сыворотка с витамином C",
+    "brand": "GlowLab",
+    "price": 2740,
+    "image": "https://picsum.photos/seed/wbshop-142/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "143",
+    "title": "Парфюмерная вода 50 мл",
+    "brand": "EssenceNoir",
+    "price": 8050,
+    "image": "https://picsum.photos/seed/wbshop-143/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "144",
+    "title": "Туалетная вода",
+    "brand": "EssenceNoir",
+    "price": 6980,
+    "image": "https://picsum.photos/seed/wbshop-144/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "145",
+    "title": "Помада матовая",
+    "brand": "ColorPop",
+    "price": 2050,
+    "image": "https://picsum.photos/seed/wbshop-145/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "146",
+    "title": "Тушь для ресниц",
+    "brand": "ColorPop",
+    "price": 1080,
+    "image": "https://picsum.photos/seed/wbshop-146/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "147",
+    "title": "Шампунь восстанавливающий",
+    "brand": "HairCare",
+    "price": 1200,
+    "image": "https://picsum.photos/seed/wbshop-147/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "148",
+    "title": "Маска для волос",
+    "brand": "HairCare",
+    "price": 2120,
+    "image": "https://picsum.photos/seed/wbshop-148/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "149",
+    "title": "Гель для душа",
+    "brand": "BodySoft",
+    "price": 990,
+    "image": "https://picsum.photos/seed/wbshop-149/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "150",
+    "title": "Скраб для тела",
+    "brand": "BodySoft",
+    "price": 2180,
+    "image": "https://picsum.photos/seed/wbshop-150/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "151",
+    "title": "Маникюрный набор",
+    "brand": "NailPro",
+    "price": 2190,
+    "image": "https://picsum.photos/seed/wbshop-151/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "152",
+    "title": "Фен-щётка",
+    "brand": "GroomPro",
+    "price": 5380,
+    "image": "https://picsum.photos/seed/wbshop-152/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "153",
+    "title": "Эпилятор",
+    "brand": "GroomPro",
+    "price": 9380,
+    "image": "https://picsum.photos/seed/wbshop-153/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "154",
+    "title": "Набор кистей для макияжа",
+    "brand": "ColorPop",
+    "price": 4790,
+    "image": "https://picsum.photos/seed/wbshop-154/600/750",
+    "tags": [
+      "крем",
+      "парфюм",
+      "красота",
+      "косметика"
+    ]
+  },
+  {
+    "id": "155",
+    "title": "Гантели разборные 20 кг",
+    "brand": "IronGym",
+    "price": 7830,
+    "image": "https://picsum.photos/seed/wbshop-155/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "156",
+    "title": "Коврик для йоги",
+    "brand": "ZenFit",
+    "price": 3280,
+    "image": "https://picsum.photos/seed/wbshop-156/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "157",
+    "title": "Фитнес-резинки набор",
+    "brand": "ZenFit",
+    "price": 2040,
+    "image": "https://picsum.photos/seed/wbshop-157/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "158",
+    "title": "Скакалка",
+    "brand": "JumpPro",
+    "price": 930,
+    "image": "https://picsum.photos/seed/wbshop-158/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "159",
+    "title": "Велосипед городской",
+    "brand": "VeloCity",
+    "price": 57940,
+    "image": "https://picsum.photos/seed/wbshop-159/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "160",
+    "title": "Самокат",
+    "brand": "VeloCity",
+    "price": 20770,
+    "image": "https://picsum.photos/seed/wbshop-160/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "161",
+    "title": "Ролики",
+    "brand": "RollFun",
+    "price": 17780,
+    "image": "https://picsum.photos/seed/wbshop-161/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "162",
+    "title": "Скейтборд",
+    "brand": "RollFun",
+    "price": 7340,
+    "image": "https://picsum.photos/seed/wbshop-162/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "163",
+    "title": "Мяч футбольный",
+    "brand": "SportKick",
+    "price": 1860,
+    "image": "https://picsum.photos/seed/wbshop-163/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "164",
+    "title": "Мяч баскетбольный",
+    "brand": "SportKick",
+    "price": 2400,
+    "image": "https://picsum.photos/seed/wbshop-164/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "165",
+    "title": "Бутылка спортивная",
+    "brand": "HydroFit",
+    "price": 1000,
+    "image": "https://picsum.photos/seed/wbshop-165/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "166",
+    "title": "Спортивная сумка",
+    "brand": "UrbanPack",
+    "price": 3750,
+    "image": "https://picsum.photos/seed/wbshop-166/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "167",
+    "title": "Палатка 3-местная",
+    "brand": "CampWild",
+    "price": 14730,
+    "image": "https://picsum.photos/seed/wbshop-167/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "168",
+    "title": "Спальник",
+    "brand": "CampWild",
+    "price": 11720,
+    "image": "https://picsum.photos/seed/wbshop-168/600/750",
+    "tags": [
+      "гантели",
+      "спорт",
+      "велосипед",
+      "фитнес"
+    ]
+  },
+  {
+    "id": "169",
+    "title": "Конструктор 500 деталей",
+    "brand": "BuildKid",
+    "price": 3170,
+    "image": "https://picsum.photos/seed/wbshop-169/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "170",
+    "title": "Конструктор машинка",
+    "brand": "BuildKid",
+    "price": 1510,
+    "image": "https://picsum.photos/seed/wbshop-170/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "171",
+    "title": "Плюшевый медведь",
+    "brand": "SoftToy",
+    "price": 2220,
+    "image": "https://picsum.photos/seed/wbshop-171/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "172",
+    "title": "Кукла интерактивная",
+    "brand": "PlayDoll",
+    "price": 6730,
+    "image": "https://picsum.photos/seed/wbshop-172/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "173",
+    "title": "Машинка на пульте",
+    "brand": "RaceKid",
+    "price": 5990,
+    "image": "https://picsum.photos/seed/wbshop-173/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "174",
+    "title": "Железная дорога",
+    "brand": "RaceKid",
+    "price": 6840,
+    "image": "https://picsum.photos/seed/wbshop-174/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "175",
+    "title": "Настольная игра для семьи",
+    "brand": "BoardFun",
+    "price": 2150,
+    "image": "https://picsum.photos/seed/wbshop-175/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "176",
+    "title": "Пазл 1000 деталей",
+    "brand": "BoardFun",
+    "price": 1700,
+    "image": "https://picsum.photos/seed/wbshop-176/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "177",
+    "title": "Книга сказок",
+    "brand": "KidBooks",
+    "price": 780,
+    "image": "https://picsum.photos/seed/wbshop-177/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "178",
+    "title": "Раскраска с наклейками",
+    "brand": "KidBooks",
+    "price": 470,
+    "image": "https://picsum.photos/seed/wbshop-178/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "179",
+    "title": "Детский рюкзак",
+    "brand": "KidPack",
+    "price": 2550,
+    "image": "https://picsum.photos/seed/wbshop-179/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "180",
+    "title": "Пенал",
+    "brand": "KidPack",
+    "price": 1460,
+    "image": "https://picsum.photos/seed/wbshop-180/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "181",
+    "title": "Самокат детский",
+    "brand": "RollFun",
+    "price": 9760,
+    "image": "https://picsum.photos/seed/wbshop-181/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "182",
+    "title": "Бассейн надувной",
+    "brand": "SummerKid",
+    "price": 6100,
+    "image": "https://picsum.photos/seed/wbshop-182/600/750",
+    "tags": [
+      "игрушка",
+      "детям",
+      "конструктор",
+      "книга"
+    ]
+  },
+  {
+    "id": "183",
+    "title": "Диван прямой",
+    "brand": "HomeComfort",
+    "price": 86370,
+    "image": "https://picsum.photos/seed/wbshop-183/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "184",
+    "title": "Кресло",
+    "brand": "HomeComfort",
+    "price": 21500,
+    "image": "https://picsum.photos/seed/wbshop-184/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "185",
+    "title": "Стеллаж",
+    "brand": "StoreBox",
+    "price": 7260,
+    "image": "https://picsum.photos/seed/wbshop-185/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "186",
+    "title": "Комод",
+    "brand": "StoreBox",
+    "price": 27120,
+    "image": "https://picsum.photos/seed/wbshop-186/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "187",
+    "title": "Зеркало напольное",
+    "brand": "MirrorHome",
+    "price": 10250,
+    "image": "https://picsum.photos/seed/wbshop-187/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "188",
+    "title": "Картина на холсте",
+    "brand": "ArtWall",
+    "price": 5140,
+    "image": "https://picsum.photos/seed/wbshop-188/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "189",
+    "title": "Часы настенные",
+    "brand": "TimeWall",
+    "price": 3150,
+    "image": "https://picsum.photos/seed/wbshop-189/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "190",
+    "title": "Ваза керамическая",
+    "brand": "ArtWall",
+    "price": 2710,
+    "image": "https://picsum.photos/seed/wbshop-190/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "191",
+    "title": "Комнатное растение",
+    "brand": "GreenHome",
+    "price": 910,
+    "image": "https://picsum.photos/seed/wbshop-191/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "192",
+    "title": "Кашпо",
+    "brand": "GreenHome",
+    "price": 2140,
+    "image": "https://picsum.photos/seed/wbshop-192/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "193",
+    "title": "Ковёр 160x230",
+    "brand": "CozyHome",
+    "price": 14890,
+    "image": "https://picsum.photos/seed/wbshop-193/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "194",
+    "title": "Шторы блэкаут",
+    "brand": "CozyHome",
+    "price": 6970,
+    "image": "https://picsum.photos/seed/wbshop-194/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "195",
+    "title": "Настенные полки 3 шт",
+    "brand": "StoreBox",
+    "price": 5960,
+    "image": "https://picsum.photos/seed/wbshop-195/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "196",
+    "title": "Пуф",
+    "brand": "HomeComfort",
+    "price": 9700,
+    "image": "https://picsum.photos/seed/wbshop-196/600/750",
+    "tags": [
+      "диван",
+      "полка",
+      "хранение",
+      "свет"
+    ]
+  },
+  {
+    "id": "197",
+    "title": "Городской рюкзак",
+    "brand": "UrbanPack",
+    "price": 5790,
+    "image": "https://picsum.photos/seed/wbshop-197/600/750",
+    "tags": [
+      "рюкзак",
+      "сумка",
+      "аксессуары"
+    ]
+  },
+  {
+    "id": "198",
+    "title": "Зонт-автомат",
+    "brand": "RainGo",
+    "price": 3690,
+    "image": "https://picsum.photos/seed/wbshop-198/600/750",
+    "tags": [
+      "зонт",
+      "аксессуары"
+    ]
+  },
+  {
+    "id": "199",
+    "title": "Солнцезащитные очки",
+    "brand": "SunLook",
+    "price": 4840,
+    "image": "https://picsum.photos/seed/wbshop-199/600/750",
+    "tags": [
+      "очки",
+      "аксессуары",
+      "лето"
+    ]
+  },
+  {
+    "id": "200",
+    "title": "Кошелёк кожаный",
+    "brand": "LeatherCraft",
+    "price": 6860,
+    "image": "https://picsum.photos/seed/wbshop-200/600/750",
+    "tags": [
+      "кошелёк",
+      "аксессуары"
+    ]
+  }
+]

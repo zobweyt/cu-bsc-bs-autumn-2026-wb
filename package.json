@@ -1,0 +1,26 @@
+{
+  "name": "cu-bsc-bs-autumn-2026-wb",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run build:ui && bun --watch src/server.ts",
+    "build": "bun run build:ui",
+    "build:ui": "bun scripts/build-ui.ts",
+    "start": "bun run build:ui && bun src/server.ts",
+    "check": "bun run build:ui && bun check"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^2.0.3",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  }
+}

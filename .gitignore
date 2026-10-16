@@ -1,0 +1,14 @@
+# deps
+/node_modules
+
+# vercel link (project id, не коммитим)
+/.vercel
+
+# build
+/dist
+
+# env
+.env*
+
+# tsc incremental
+*.tsbuildinfo
