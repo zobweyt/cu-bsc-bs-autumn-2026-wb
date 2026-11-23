@@ -3,6 +3,8 @@ import { createMcpServer } from './mcp/server.js';
 import { clearCart } from './store/cart.js';
 import { clearOrders } from './store/orders.js';
 import { resetMetrics } from './store/metrics.js';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
 const PORT = Number(process.env.PORT ?? 3000);
 
@@ -45,8 +47,10 @@ Bun.serve({
     // Скриншоты сценария для README и слайдов (docs/screens/*.png).
     const shot = url.pathname.match(/^\/screens\/([a-z0-9_-]+\.png)$/);
     if (shot) {
-      const file = Bun.file(`docs/screens/${shot[1]}`);
-      if (await file.exists()) return withCors(new Response(file, { headers: { 'Content-Type': 'image/png' } }));
+      // readFile + join(process.cwd(), ...) — как в resources.ts: так Vercel видит
+      // файлы при трассировке и кладёт docs/screens в бандл функции.
+      const png = await readFile(join(process.cwd(), 'docs', 'screens', shot[1])).catch(() => null);
+      if (png) return withCors(new Response(png, { headers: { 'Content-Type': 'image/png' } }));
     }
     if (url.pathname === '/mcp') return handleMcp(req);
     // Сброс перед каждым интервью: корзина, заказы и метрики с нуля.
