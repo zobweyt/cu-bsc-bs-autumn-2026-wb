@@ -8,7 +8,7 @@ function StatsView() {
   const [stats, setStats] = useState<Stats | null>(null);
 
   const { app, error } = useApp({
-    appInfo: { name: 'shop', version: '3.0.0' },
+    appInfo: { name: 'shop', version: '3.1.0' },
     capabilities: {},
     onAppCreated: (a: McpApp) => {
       a.ontoolresult = (res) => {
@@ -19,8 +19,9 @@ function StatsView() {
   });
   const stuck = useStuckNotice(!app && !error);
 
-  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   useHostTheme(app);
+
+  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   if (!app) return stuck ? <Stuck /> : <Loading />;
   if (!stats) return <div className="muted">Нет данных</div>;
 
@@ -28,14 +29,14 @@ function StatsView() {
   const f = stats.funnel;
   const c = stats.conversion;
   const tiles: [string, string][] = [
-    ['Выручка', fmt(t.revenue)],
+    ['Оборот (тест)', fmt(t.revenue)],
     ['Заказы', String(t.orders)],
     ['Средний чек', fmt(t.avgOrderValue)],
-    ['Поисков', String(t.searches)],
-    ['Время до оплаты', fmtDur(f.avgMs)],
+    ['Время до оформления', fmtDur(f.avgMs)],
+    ['Поисков: 3+ условия / всего', `${stats.searches.complex} / ${t.searches}`],
+    ['Без полного совпадения', String(stats.searches.noExact)],
     ['Поиск → заказ', pct(c.searchToOrder)],
     ['Корзина → заказ', pct(c.cartToOrder)],
-    ['Просмотров', String(t.views)],
   ];
 
   return (
@@ -48,6 +49,7 @@ function StatsView() {
             : 'Пока пусто — оформите первый заказ'
         }
       />
+      <p className="meta-line">Метрики прототипа: показывают маршрут покупки, но не доказывают, что заказы новые — это меряет только A/B на трафике WB.</p>
       <div className="stat-grid">
         {tiles.map(([label, value]) => (
           <div className="stat-card" key={label}>
@@ -73,7 +75,7 @@ function StatsView() {
                   {o.id} · {o.date}
                 </div>
                 <div className="card-sub">
-                  {o.items} шт · до оплаты {fmtDur(o.durationMs)}
+                  {o.items} шт · до оформления {fmtDur(o.durationMs)}
                 </div>
               </div>
               <div className="list-sum">{fmt(o.total)}</div>

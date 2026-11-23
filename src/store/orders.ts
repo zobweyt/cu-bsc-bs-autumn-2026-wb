@@ -6,11 +6,16 @@ export type Order = {
   createdAt: number;
   total: number;
   items: OrderItem[];
+  // Откуда пришёл заказ: метка нужна, чтобы отделить заказы из ассистента.
+  // Сама по себе она не доказывает, что заказ новый — это меряет только A/B.
+  source: 'assistant';
   mock: true;
 };
 
-export const STAGES = ['Оплачен', 'Сборка', 'В пути', 'Доставлен'] as const;
-// Пороги переходов 0→1, 1→2, 2→3 (мс с момента оплаты). Статус выводится
+// Граница MVP: оформление и оплата — на стороне WB; ассистент только
+// передаёт корзину. Первая стадия поэтому «Оформлен в WB», а не «Оплачен».
+export const STAGES = ['Оформлен в WB', 'Сборка', 'В пути', 'Доставлен'] as const;
+// Пороги переходов 0→1, 1→2, 2→3 (мс с момента оформления). Статус выводится
 // из времени, а не таймерами — переживает рестарт инстанса.
 const STAGE_AFTER = [5000, 15000, 30000];
 
@@ -30,6 +35,7 @@ export function createOrder(items: OrderItem[], total: number): Order {
     createdAt: Date.now(),
     total,
     items,
+    source: 'assistant',
     mock: true,
   };
   orders.push(order);
@@ -46,6 +52,7 @@ export function orderView(o: Order) {
     stage,
     stageLabel: STAGES[stage],
     eta: stage >= 3 ? null : formatDate(o.createdAt + 3 * 86400000),
+    source: o.source,
     mock: true as const,
   };
 }
@@ -58,4 +65,8 @@ export function getOrder(id: string) {
   const o = orders.find((x) => x.id === id);
   if (!o) throw new Error('Заказ не найден: ' + id);
   return orderView(o);
+}
+
+export function clearOrders() {
+  orders.length = 0;
 }

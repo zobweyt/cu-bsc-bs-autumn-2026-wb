@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { useApp } from '@modelcontextprotocol/ext-apps/react';
 import type { App as McpApp } from '@modelcontextprotocol/ext-apps';
-import { fmt,  fmtDay,  fmtDayLong,  meta,  plural,  Star,  ThumbUp,  CheckBadge,  ChatIcon,  BoxIcon,  ShopIcon,  Loading,  Stuck,  ErrorBox,  useStuckNotice,  useHostTheme,  type Product,   } from '../shared';
+import { fmt, fmtRating, deliveryDate, plural, Star, ThumbUp, CheckBadge, ChatIcon, BoxIcon, ShopIcon, Stock, Loading, Stuck, ErrorBox, useStuckNotice, useHostTheme, type Product } from '../shared';
 
 function ProductView() {
   const [product, setProduct] = useState<Product | null>(null);
@@ -14,7 +14,7 @@ function ProductView() {
   const [err, setErr] = useState('');
 
   const { app, error } = useApp({
-    appInfo: { name: 'shop', version: '3.0.0' },
+    appInfo: { name: 'shop', version: '3.1.0' },
     capabilities: {},
     onAppCreated: (a: McpApp) => {
       a.ontoolresult = (res) => {
@@ -32,9 +32,8 @@ function ProductView() {
   if (!app) return stuck ? <Stuck /> : <Loading />;
   if (!product) return <div className="muted">Товар не найден</div>;
 
-  const m = meta(product);
-  const questions = 3 + (m.reviews % 27);
-  const delivery = fmtDayLong(Date.now() + 86400000);
+  const questions = 3 + (product.reviews % 27);
+  const delivery = deliveryDate(product.deliveryDays);
 
   async function add() {
     setBusy(true);
@@ -60,7 +59,7 @@ function ProductView() {
       };
       if (res?.isError) {
         const first = res?.content?.[0];
-        throw new Error((first && first.text) || 'Оплата не прошла');
+        throw new Error((first && first.text) || 'Не удалось перейти к оформлению');
       }
       const id = res?.structuredContent?.order?.id;
       await app!.sendMessage({
@@ -69,8 +68,8 @@ function ProductView() {
           {
             type: 'text',
             text: id
-              ? `Я купил ${product!.title} в один клик, заказ ${id}. Покажи статус заказа.`
-              : `Я купил ${product!.title} в один клик.`,
+              ? `Я оформил ${product!.title} в WB, заказ ${id}. Покажи статус заказа.`
+              : `Я оформил ${product!.title} в WB.`,
           },
         ],
       });
@@ -96,8 +95,8 @@ function ProductView() {
         <div className="rating-line">
           <span className="rating">
             <Star />
-            <b>{m.rating.toFixed(1).replace('.', ',')}</b>
-            <span> · {m.reviews.toLocaleString('ru-RU')} {plural(m.reviews, ['оценка', 'оценки', 'оценок'])}</span>
+            <b>{fmtRating(product.rating)}</b>
+            <span> · {product.reviews.toLocaleString('ru-RU')} {plural(product.reviews, ['оценка', 'оценки', 'оценок'])}</span>
           </span>
           <span className="questions">
             <ChatIcon /> {questions} {plural(questions, ['вопрос', 'вопроса', 'вопросов'])}
@@ -105,32 +104,23 @@ function ProductView() {
           <span className="article">Арт: WB-{product.id.padStart(6, '0')}</span>
         </div>
         <button className="btn-ghost" onClick={() => setMore((v) => !v)} aria-expanded={more}>
-          {more ? 'Скрыть характеристики' : 'Больше информации о товаре'}
+          {more ? 'Скрыть характеристики' : 'Характеристики'}
         </button>
         {more && (
           <dl>
-            <div className="spec">
-              <dt className="spec-name">Артикул</dt>
-              <span className="spec-dots" aria-hidden="true" />
-              <dd className="spec-value">WB-{product.id.padStart(6, '0')}</dd>
-            </div>
-            <div className="spec">
-              <dt className="spec-name">Рейтинг</dt>
-              <span className="spec-dots" aria-hidden="true" />
-              <dd className="spec-value">
-                {m.rating.toFixed(1).replace('.', ',')} · {m.reviews} {plural(m.reviews, ['оценка', 'оценки', 'оценок'])}
-              </dd>
-            </div>
-            <div className="spec">
-              <dt className="spec-name">Доставка</dt>
-              <span className="spec-dots" aria-hidden="true" />
-              <dd className="spec-value">{fmtDay(Date.now() + 86400000)}</dd>
-            </div>
-            <div className="spec">
-              <dt className="spec-name">Возврат</dt>
-              <span className="spec-dots" aria-hidden="true" />
-              <dd className="spec-value">14 дней</dd>
-            </div>
+            {product.specs.length === 0 && <p className="meta-line">Характеристик в данных карточки нет</p>}
+            {[
+              ...product.specs,
+              { key: 'delivery', label: 'Доставка', value: `${delivery} (${product.deliveryDays} дн.)` },
+              { key: 'return', label: 'Возврат', value: '14 дней, по правилам WB' },
+              { key: 'article', label: 'Артикул', value: 'WB-' + product.id.padStart(6, '0') },
+            ].map((sp) => (
+              <div className="spec" key={sp.key}>
+                <dt className="spec-name">{sp.label}</dt>
+                <span className="spec-dots" aria-hidden="true" />
+                <dd className="spec-value">{sp.value}</dd>
+              </div>
+            ))}
           </dl>
         )}
       </div>
@@ -138,9 +128,9 @@ function ProductView() {
       <div className="panel buybox">
         <div className="prices">
           <span className="price-wallet">{fmt(product.price)}</span>
-          <span className="price-old">{fmt(m.old)}</span>
+          <span className="price-old">{fmt(product.oldPrice)}</span>
         </div>
-        {m.off >= 15 && (
+        {product.discount >= 15 && (
           <span className="badge-good">
             <ThumbUp /> Хорошая цена
           </span>
@@ -160,16 +150,16 @@ function ProductView() {
           </button>
         </div>
         <button className="btn-secondary" disabled={busy || buying} onClick={buyNow}>
-          {buying ? 'Оформляем…' : 'Купить сейчас'}
+          {buying ? 'Передаём в WB…' : 'Оформить в WB'}
         </button>
         {err && <ErrorBox message={err} />}
         <p className="delivery-line">
-          <BoxIcon /> {delivery}, склад продавца
+          <BoxIcon /> {delivery}, склад продавца · <Stock left={product.stock} />
         </p>
         <p className="delivery-line">
           <ShopIcon /> Официальный магазин · <Star /> 4,7
         </p>
-        <p className="meta-line">Тестовый каталог: оплата мок, деньги не списываются</p>
+        <p className="meta-line">Оформление и оплата — на стороне WB. Тестовый каталог: переход имитируется, деньги не списываются</p>
       </div>
     </>
   );

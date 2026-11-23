@@ -1,6 +1,6 @@
 import { findProduct } from './catalog.js';
 
-export type CartLine = { id: string; title: string; price: number; image: string; qty: number };
+export type CartLine = { id: string; title: string; price: number; oldPrice: number; image: string; qty: number };
 
 const cart = new Map<string, number>();
 
@@ -10,7 +10,7 @@ export function getCart() {
   cart.forEach((qty, id) => {
     const p = findProduct(id);
     if (!p) return;
-    lines.push({ id: p.id, title: p.title, price: p.price, image: p.image, qty });
+    lines.push({ id: p.id, title: p.title, price: p.price, oldPrice: p.oldPrice, image: p.image, qty });
     total += p.price * qty;
   });
   const count = lines.reduce((n, l) => n + l.qty, 0);

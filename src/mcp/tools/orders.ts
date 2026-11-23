@@ -11,7 +11,7 @@ export function registerOrderTools(server: McpServer) {
     server,
     'show_orders',
     {
-      description: 'Показать заказы: статусы Оплачен → Сборка → В пути → Доставлен.',
+      description: 'Показать заказы: статусы Оформлен в WB → Сборка → В пути → Доставлен.',
       inputSchema: z.object({}),
       outputSchema: z.object({ orders: z.array(OrderSchema) }),
       _meta: { ui: { resourceUri: UI.orders } },

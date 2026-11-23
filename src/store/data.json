@@ -8,7 +8,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "механические",
+      "silent": false,
+      "backlight": false,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "2",
@@ -19,7 +26,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "switches": "мембранные",
+      "silent": true,
+      "backlight": false,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "3",
@@ -30,7 +44,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "механические",
+      "silent": false,
+      "backlight": true,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "4",
@@ -41,7 +62,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "switches": "ножничные",
+      "silent": true,
+      "backlight": true,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "5",
@@ -52,7 +80,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "механические",
+      "silent": false,
+      "backlight": false,
+      "layout": "TKL"
+    }
   },
   {
     "id": "6",
@@ -63,7 +98,15 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "switches": "мембранные",
+      "silent": true,
+      "backlight": false,
+      "layout": "полноразмерная",
+      "ergonomic": true
+    }
   },
   {
     "id": "7",
@@ -74,7 +117,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "switches": "мембранные",
+      "silent": true,
+      "backlight": false,
+      "layout": "компактная"
+    }
   },
   {
     "id": "8",
@@ -85,7 +135,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "механические",
+      "silent": false,
+      "backlight": true,
+      "layout": "60%"
+    }
   },
   {
     "id": "9",
@@ -96,7 +153,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "Bluetooth",
+      "switches": "ножничные",
+      "silent": true,
+      "backlight": false,
+      "layout": "компактная"
+    }
   },
   {
     "id": "10",
@@ -107,7 +171,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "мембранные",
+      "silent": true,
+      "backlight": false,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "11",
@@ -118,7 +189,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "механические",
+      "silent": true,
+      "backlight": true,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "12",
@@ -129,7 +207,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "Bluetooth",
+      "switches": "силиконовые",
+      "silent": true,
+      "backlight": false,
+      "layout": "компактная"
+    }
   },
   {
     "id": "13",
@@ -140,7 +225,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "switches": "механические",
+      "silent": false,
+      "backlight": false,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "14",
@@ -151,7 +243,14 @@
     "tags": [
       "клавиатура",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "switches": "механические",
+      "silent": false,
+      "backlight": true,
+      "layout": "полноразмерная"
+    }
   },
   {
     "id": "15",
@@ -163,7 +262,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 1600,
+      "backlight": false,
+      "weight": 85
+    }
   },
   {
     "id": "16",
@@ -175,7 +281,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": false,
+      "dpi": 16000,
+      "backlight": true,
+      "weight": 95
+    }
   },
   {
     "id": "17",
@@ -187,7 +300,15 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 2400,
+      "backlight": false,
+      "weight": 120,
+      "ergonomic": true
+    }
   },
   {
     "id": "18",
@@ -199,7 +320,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": true,
+      "dpi": 1200,
+      "backlight": false,
+      "weight": 80
+    }
   },
   {
     "id": "19",
@@ -211,7 +339,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": false,
+      "dpi": 6400,
+      "backlight": true,
+      "weight": 90
+    }
   },
   {
     "id": "20",
@@ -223,7 +358,15 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 1000,
+      "backlight": false,
+      "weight": 140,
+      "ergonomic": true
+    }
   },
   {
     "id": "21",
@@ -235,7 +378,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 1200,
+      "backlight": false,
+      "weight": 60
+    }
   },
   {
     "id": "22",
@@ -247,7 +397,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": false,
+      "dpi": 1000,
+      "backlight": false,
+      "weight": 90
+    }
   },
   {
     "id": "23",
@@ -259,7 +416,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 4000,
+      "backlight": false,
+      "weight": 105
+    }
   },
   {
     "id": "24",
@@ -271,7 +435,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 1000,
+      "backlight": false,
+      "weight": 55
+    }
   },
   {
     "id": "25",
@@ -283,7 +454,15 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": false,
+      "dpi": 2400,
+      "backlight": false,
+      "weight": 95,
+      "hand": "левая"
+    }
   },
   {
     "id": "26",
@@ -295,7 +474,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": false,
+      "dpi": 1200,
+      "backlight": false,
+      "weight": 88
+    }
   },
   {
     "id": "27",
@@ -307,7 +493,14 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": false,
+      "dpi": 26000,
+      "backlight": true,
+      "weight": 58
+    }
   },
   {
     "id": "28",
@@ -319,7 +512,33 @@
       "мышь",
       "мышка",
       "периферия"
-    ]
+    ],
+    "specs": {
+      "connection": "кабель USB",
+      "silent": false,
+      "dpi": 1000,
+      "backlight": true,
+      "weight": 70
+    }
+  },
+  {
+    "id": "201",
+    "title": "Беспроводная бесшумная мышь",
+    "brand": "ClickMate",
+    "price": 3490,
+    "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22300%22%3E%3Crect%20width%3D%22300%22%20height%3D%22300%22%20fill%3D%22%2335d45c%22/%3E%3Ctext%20x%3D%22150%22%20y%3D%22160%22%20font-size%3D%2228%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%20font-family%3D%22sans-serif%22%3E%D0%9C%D1%8B%D1%88%D1%8C%3C/text%3E%3C/svg%3E",
+    "tags": [
+      "мышь",
+      "мышка",
+      "периферия"
+    ],
+    "specs": {
+      "connection": "радио 2,4 ГГц",
+      "silent": true,
+      "dpi": 1600,
+      "backlight": false,
+      "weight": 70
+    }
   },
   {
     "id": "29",

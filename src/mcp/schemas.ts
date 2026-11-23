@@ -1,14 +1,31 @@
 import { z } from 'zod';
 
 // Общие схемы structuredContent. Инпут-схемы живут рядом с тулами.
+export const SpecSchema = z.object({ key: z.string(), label: z.string(), value: z.string() });
+
+export const CheckSchema = z.object({
+  condition: z.string(),
+  ok: z.boolean().nullable(),
+  detail: z.string(),
+});
+
 export const ProductSchema = z.object({
   id: z.string(),
   title: z.string(),
   brand: z.string(),
   price: z.number(),
+  oldPrice: z.number(),
+  discount: z.number(),
+  rating: z.number(),
+  reviews: z.number(),
+  stock: z.number(),
+  deliveryDays: z.number(),
   image: z.string(),
   tags: z.array(z.string()),
+  specs: z.array(SpecSchema),
 });
+
+export const SearchHitSchema = ProductSchema.extend({ checks: z.array(CheckSchema) });
 
 export const CartSchema = z.object({
   lines: z.array(
@@ -18,6 +35,7 @@ export const CartSchema = z.object({
       price: z.number(),
       image: z.string(),
       qty: z.number(),
+      oldPrice: z.number(),
     }),
   ),
   total: z.number(),
@@ -34,6 +52,7 @@ export const OrderSchema = z.object({
   stage: z.number(),
   stageLabel: z.string(),
   eta: z.string().nullable(),
+  source: z.string(),
   mock: z.boolean(),
 });
 
@@ -50,6 +69,12 @@ export const StatsSchema = z.object({
   conversion: z.object({
     searchToOrder: z.number().nullable(),
     cartToOrder: z.number().nullable(),
+  }),
+  searches: z.object({
+    // поиски с 3+ условиями — целевой сценарий MVP
+    complex: z.number(),
+    // поиски, где под все условия ничего не нашлось
+    noExact: z.number(),
   }),
   funnel: z.object({
     count: z.number(),

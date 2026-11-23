@@ -2,8 +2,27 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import type { App as McpApp } from '@modelcontextprotocol/ext-apps';
 
-export type Product = { id: string; title: string; brand: string; price: number; image: string; tags: string[] };
-export type CartLine = { id: string; title: string; price: number; image: string; qty: number };
+export type Spec = { key: string; label: string; value: string };
+export type Check = { condition: string; ok: boolean | null; detail: string };
+// Все витринные поля приходят с сервера — вьюха ничего не досчитывает,
+// чтобы карточка и ответ ассистента совпадали.
+export type Product = {
+  id: string;
+  title: string;
+  brand: string;
+  price: number;
+  oldPrice: number;
+  discount: number;
+  rating: number;
+  reviews: number;
+  stock: number;
+  deliveryDays: number;
+  image: string;
+  tags: string[];
+  specs: Spec[];
+};
+export type SearchHit = Product & { checks: Check[] };
+export type CartLine = { id: string; title: string; price: number; oldPrice: number; image: string; qty: number };
 export type Cart = { lines: CartLine[]; total: number; count: number };
 export type OrderItem = { id: string; title: string; price: number; qty: number };
 export type OrderView = {
@@ -14,6 +33,7 @@ export type OrderView = {
   stage: number;
   stageLabel: string;
   eta: string | null;
+  source: string;
   mock: boolean;
 };
 export type Stats = {
@@ -27,13 +47,14 @@ export type Stats = {
     avgOrderValue: number;
   };
   conversion: { searchToOrder: number | null; cartToOrder: number | null };
+  searches: { complex: number; noExact: number };
   funnel: { count: number; avgMs: number | null; minMs: number | null; maxMs: number | null };
   topQueries: { query: string; count: number }[];
   topProducts: { id: string; title: string; qty: number }[];
   recent: { id: string; date: string; total: number; items: number; durationMs: number | null }[];
 };
 
-export const STAGES = ['Оплачен', 'Сборка', 'В пути', 'Доставлен'];
+export const STAGES = ['Оформлен в WB', 'Сборка', 'В пути', 'Доставлен'];
 
 export function fmt(n: number): string {
   return n.toLocaleString('ru-RU') + ' ₽';
@@ -50,30 +71,12 @@ export function pct(x: number | null): string {
   return x == null ? '—' : Math.round(x * 100) + '%';
 }
 
-function hash(s: string): number {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
-  return h;
+export function deliveryDate(days: number): string {
+  return new Date(Date.now() + days * 86400000).toLocaleString('ru-RU', { day: 'numeric', month: 'long' });
 }
 
-// Демо-витрина: рейтинг и скидка детерминированы по id, стабильны между показами
-export function meta(p: { id: string; price: number }): { rating: number; reviews: number; off: number; old: number } {
-  const h = hash(p.id);
-  const off = 5 + (h % 26);
-  return {
-    rating: (45 + (h % 6)) / 10,
-    reviews: 18 + (h % 480),
-    off,
-    old: Math.round(p.price / (1 - off / 100) / 10) * 10,
-  };
-}
-
-// Остаток тоже детерминирован по id: стабилен между показами
-export function stockFor(id: string): { left: number; low: boolean } {
-  let h = 0;
-  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
-  const left = 3 + (h % 40);
-  return { left, low: left < 8 };
+export function fmtRating(r: number): string {
+  return r.toFixed(1).replace('.', ',');
 }
 
 export function fmtDay(ts: number): string {
@@ -101,8 +104,8 @@ export function ViewHead({ title, sub }: { title: string; sub?: string }): React
   );
 }
 
-export function Stock({ id }: { id: string }): ReactNode {
-  const { left, low } = stockFor(id);
+export function Stock({ left }: { left: number }): ReactNode {
+  const low = left < 8;
   return (
     <span className={'stock ' + (low ? 'stock-low' : 'stock-ok')}>
       {low ? `Осталось ${left} шт` : 'В наличии'}
@@ -181,6 +184,24 @@ export function ShopIcon(): ReactNode {
       <path d="M4 9h16" />
       <path d="M9.5 20v-6h5v6" />
     </svg>
+  );
+}
+
+// Чипы условий покупателя: ✓ выполнено, ✗ нет, ? нет данных в карточке
+export function Checks({ checks }: { checks: Check[] }): ReactNode {
+  if (!checks.length) return null;
+  return (
+    <ul className="checks" aria-label="Условия покупателя">
+      {checks.map((c) => (
+        <li
+          key={c.condition}
+          className={'check ' + (c.ok === true ? 'check-ok' : c.ok === false ? 'check-fail' : 'check-unknown')}
+          title={c.detail}
+        >
+          {c.ok === true ? '✓' : c.ok === false ? '✗' : '?'} {c.ok === true ? c.condition : c.detail}
+        </li>
+      ))}
+    </ul>
   );
 }
 

@@ -9,7 +9,7 @@ function OrderDetailView() {
   const [busy, setBusy] = useState(false);
 
   const { app, error } = useApp({
-    appInfo: { name: 'shop', version: '3.0.0' },
+    appInfo: { name: 'shop', version: '3.1.0' },
     capabilities: {},
     onAppCreated: (a: McpApp) => {
       a.ontoolresult = (res) => {
@@ -20,8 +20,9 @@ function OrderDetailView() {
   });
   const stuck = useStuckNotice(!app && !error);
 
-  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   useHostTheme(app);
+
+  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   if (!app) return stuck ? <Stuck /> : <Loading />;
   if (!order) return <div className="muted">Заказ не найден</div>;
 
@@ -44,6 +45,7 @@ function OrderDetailView() {
       />
       <div className="panel">
         <span className="pill pill-mock">MOCK · деньги не списаны</span>
+        <p className="meta-line">Источник заказа: ассистент · оформлен на стороне WB</p>
         <Track stage={order.stage} />
         {order.eta && (
           <p className="meta-line">Прибудет {order.eta}</p>

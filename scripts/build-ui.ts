@@ -35,7 +35,7 @@ await mkdir('dist/ui', { recursive: true });
 
 for (let i = 0; i < b.outputs.length; i++) {
   const raw = await b.outputs[i].text();
-  const js = raw.replace(/<\/script/gi, '<\\/script>').replace(/<!--/g, '<\\!-->');
+  const js = raw.replace(/<\/script/gi, '<\\/script').replace(/<!--/g, '<\\!--');
   const html = shell.split('<!--CSS-->').join(css).split('<!--JS-->').join(js);
   await Bun.write(`dist/ui/${views[i]}.html`, html);
 }

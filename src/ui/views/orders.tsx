@@ -20,7 +20,7 @@ function OrdersView() {
   const [busyId, setBusyId] = useState('');
 
   const { app, error } = useApp({
-    appInfo: { name: 'shop', version: '3.0.0' },
+    appInfo: { name: 'shop', version: '3.1.0' },
     capabilities: {},
     onAppCreated: (a: McpApp) => {
       a.ontoolresult = (res) => {
@@ -31,8 +31,9 @@ function OrdersView() {
   });
   const stuck = useStuckNotice(!app && !error);
 
-  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   useHostTheme(app);
+
+  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   if (!app) return stuck ? <Stuck /> : <Loading />;
 
   async function toggle(o: OrderListItem) {

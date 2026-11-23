@@ -2,6 +2,7 @@ import type { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { registerAppTool } from '@modelcontextprotocol/ext-apps/server';
 import { z } from 'zod';
 import { getCart, setQty, clearCart } from '../../store/cart.js';
+import { rub } from '../../store/catalog.js';
 import { createOrder, orderView } from '../../store/orders.js';
 import { trackAdd, recordPurchase } from '../../store/metrics.js';
 import { CartSchema, OrderSchema } from '../schemas.js';
@@ -27,7 +28,7 @@ export function registerCartTools(server: McpServer) {
         const cart = setQty(args.id, (current?.qty ?? 0) + args.qty);
         trackAdd(args.id, args.qty);
         return {
-          content: [{ type: 'text' as const, text: `В корзине: ${cart.count} шт на ${cart.total} ₽` }],
+          content: [{ type: 'text' as const, text: `В корзине: ${cart.count} шт на ${rub(cart.total)}` }],
           structuredContent: { cart },
         };
       } catch (e) {
@@ -53,7 +54,7 @@ export function registerCartTools(server: McpServer) {
       try {
         const cart = setQty(args.id, args.qty);
         return {
-          content: [{ type: 'text' as const, text: `В корзине: ${cart.count} шт на ${cart.total} ₽` }],
+          content: [{ type: 'text' as const, text: `В корзине: ${cart.count} шт на ${rub(cart.total)}` }],
           structuredContent: { cart },
         };
       } catch (e) {
@@ -67,7 +68,7 @@ export function registerCartTools(server: McpServer) {
     server,
     'show_cart',
     {
-      description: 'Показать корзину: состав, количество, итог и кнопка оплаты.',
+      description: 'Показать корзину: состав, количество, итог и кнопка перехода к оформлению в WB.',
       inputSchema: z.object({}),
       outputSchema: z.object({ cart: CartSchema }),
       _meta: { ui: { resourceUri: UI.cart } },
@@ -78,7 +79,7 @@ export function registerCartTools(server: McpServer) {
         content: [
           {
             type: 'text' as const,
-            text: cart.lines.length ? `В корзине: ${cart.count} шт на ${cart.total} ₽` : 'Корзина пуста',
+            text: cart.lines.length ? `В корзине: ${cart.count} шт на ${rub(cart.total)}` : 'Корзина пуста',
           },
         ],
         structuredContent: { cart },
@@ -86,13 +87,15 @@ export function registerCartTools(server: McpServer) {
     },
   );
 
-  // Тестовая оплата всей корзины
+  // Передача корзины в оформление WB (в прототипе — имитация)
   registerAppTool(
     server,
     'checkout',
     {
       description:
-        'Тестовая оплата корзины целиком, деньги не списываются. Показывает карточку заказа.',
+        'Передать корзину в оформление Wildberries. Подтверждение заказа, выбор ПВЗ, оплата и чек — на стороне WB, ' +
+        'не в чате. В прототипе этот переход имитируется: создаётся тестовый заказ с меткой источника «ассистент», ' +
+        'деньги не списываются. Вызывай только когда покупатель сам попросил оформить заказ.',
       inputSchema: z.object({}),
       outputSchema: z.object({ order: OrderSchema }),
       _meta: { ui: { resourceUri: UI.order } },
@@ -109,7 +112,7 @@ export function registerCartTools(server: McpServer) {
         recordPurchase(order);
         const view = orderView(order);
         return {
-          content: [{ type: 'text' as const, text: `Тестовый заказ ${view.id} оплачен: ${view.total} ₽` }],
+          content: [{ type: 'text' as const, text: `Корзина передана в оформление WB (имитация, деньги не списываются). Тестовый заказ ${view.id}: ${rub(view.total)}` }],
           structuredContent: { order: view },
         };
       } catch (e) {

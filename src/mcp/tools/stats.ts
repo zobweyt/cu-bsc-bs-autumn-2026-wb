@@ -7,13 +7,13 @@ import { StatsSchema } from '../schemas.js';
 import { UI } from '../resources.js';
 
 export function registerStatsTools(server: McpServer) {
-  // Бизнес-метрики: воронка от первого поиска до оплаты, конверсии, топы
+  // Бизнес-метрики: воронка от первого поиска до оформления, конверсии, топы
   registerAppTool(
     server,
     'show_stats',
     {
       description:
-        'Бизнес-метрики магазина: выручка, заказы, средний чек, конверсии, среднее время от первого поиска до оплаты, топ запросов и товаров, последние заказы. Вызывай, когда спрашивают про статистику, метрики, аналитику, продажи.',
+        'Метрики прототипа: оборот, заказы, средний чек, конверсии, время от первого поиска до оформления, поиски с 3+ условиями и без полного совпадения, топ запросов и товаров, последние заказы. Вызывай, когда спрашивают про статистику, метрики, аналитику, продажи.',
       inputSchema: z.object({}),
       outputSchema: z.object({ stats: StatsSchema }),
       _meta: { ui: { resourceUri: UI.stats } },
@@ -27,9 +27,10 @@ export function registerStatsTools(server: McpServer) {
           {
             type: 'text' as const,
             text:
-              `Заказов: ${stats.totals.orders}, выручка: ${stats.totals.revenue} ₽, ` +
+              `Заказов: ${stats.totals.orders}, оборот (тест): ${stats.totals.revenue} ₽, ` +
               `средний чек: ${stats.totals.avgOrderValue} ₽. ` +
-              `Среднее время от первого поиска до оплаты: ${avg}. ` +
+              `Среднее время от первого поиска до оформления: ${avg}. ` +
+              `Поисков: ${stats.totals.searches}, из них с 3+ условиями: ${stats.searches.complex}, без полного совпадения: ${stats.searches.noExact}. ` +
               `Конверсия поиск → заказ: ${pct(stats.conversion.searchToOrder)}, ` +
               `корзина → заказ: ${pct(stats.conversion.cartToOrder)}.`,
           },

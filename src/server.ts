@@ -1,5 +1,8 @@
 import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js';
 import { createMcpServer } from './mcp/server.js';
+import { clearCart } from './store/cart.js';
+import { clearOrders } from './store/orders.js';
+import { resetMetrics } from './store/metrics.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 
@@ -16,7 +19,7 @@ function withCors(res: Response): Response {
 }
 
 // Stateless-режим: сессии нет, под каждый запрос — свой McpServer + транспорт.
-// Корзина/заказы/метрики общие — живут в памяти модуля src/store.ts.
+// Корзина/заказы/метрики общие — живут в памяти модулей src/store/*.
 async function handleMcp(req: Request): Promise<Response> {
   const server = createMcpServer();
   const transport = new WebStandardStreamableHTTPServerTransport({ sessionIdGenerator: undefined });
@@ -39,7 +42,25 @@ Bun.serve({
     const url = new URL(req.url);
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
     if (url.pathname === '/health') return withCors(Response.json({ ok: true }));
+    // Скриншоты сценария для README и слайдов (docs/screens/*.png).
+    const shot = url.pathname.match(/^\/screens\/([a-z0-9_-]+\.png)$/);
+    if (shot) {
+      const file = Bun.file(`docs/screens/${shot[1]}`);
+      if (await file.exists()) return withCors(new Response(file, { headers: { 'Content-Type': 'image/png' } }));
+    }
     if (url.pathname === '/mcp') return handleMcp(req);
+    // Сброс перед каждым интервью: корзина, заказы и метрики с нуля.
+    // Работает, только если задан RESET_TOKEN (иначе 404 — эндпоинта как бы нет).
+    if (url.pathname === '/reset' && req.method === 'POST') {
+      const token = process.env.RESET_TOKEN;
+      if (!token) return withCors(Response.json({ error: 'not found' }, { status: 404 }));
+      if (req.headers.get('authorization') !== `Bearer ${token}`)
+        return withCors(Response.json({ error: 'unauthorized' }, { status: 401 }));
+      clearCart();
+      clearOrders();
+      resetMetrics();
+      return withCors(Response.json({ ok: true }));
+    }
     return withCors(Response.json({ error: 'not found' }, { status: 404 }));
   },
 });

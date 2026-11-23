@@ -3,16 +3,25 @@ import { formatDate } from './format.js';
 import type { Order } from './orders.js';
 
 // Метрики воронки (только запись событий, на логику не влияет).
-// Начало текущей воронки — первый поиск после прошлой оплаты.
-const searchEvents: { t: number; query: string; count: number }[] = [];
+// Начало текущей воронки — первый поиск после прошлого оформления.
+const searchEvents: { t: number; query: string; count: number; conditions: number; exact: boolean }[] = [];
 const viewEvents: { t: number; id: string }[] = [];
 const addEvents: { t: number; id: string; qty: number }[] = [];
 const purchaseEvents: { id: string; total: number; items: number; durationMs: number | null; t: number }[] = [];
 let funnelStart: number | null = null;
 
-export function trackSearch(query: string, count: number) {
+export function trackSearch(query: string, count: number, conditions = 0, exact = count > 0) {
   if (funnelStart == null) funnelStart = Date.now();
-  searchEvents.push({ t: Date.now(), query, count });
+  searchEvents.push({ t: Date.now(), query, count, conditions, exact });
+}
+
+// Сброс перед интервью: чистые метрики на каждого участника.
+export function resetMetrics() {
+  searchEvents.length = 0;
+  viewEvents.length = 0;
+  addEvents.length = 0;
+  purchaseEvents.length = 0;
+  funnelStart = null;
 }
 
 export function trackView(id: string) {
@@ -62,12 +71,16 @@ export function getStats() {
       avgOrderValue: orders ? Math.round(revenue / orders) : 0,
     },
     conversion: {
-      // доля поисков, закончившихся заказом; доля добавленных штук, дошедших до оплаты
+      // доля поисков, закончившихся заказом; доля добавленных штук, дошедших до оформления
       searchToOrder: searchEvents.length ? orders / searchEvents.length : null,
       cartToOrder: unitsAdded ? unitsOrdered / unitsAdded : null,
     },
+    searches: {
+      complex: searchEvents.filter((s) => s.conditions >= 3).length,
+      noExact: searchEvents.filter((s) => !s.exact).length,
+    },
     funnel: {
-      // время от первого поиска воронки до оплаты
+      // время от первого поиска воронки до оформления
       count: durs.length,
       avgMs: durs.length ? Math.round(durs.reduce((a, b) => a + b, 0) / durs.length) : null,
       minMs: durs.length ? Math.min(...durs) : null,

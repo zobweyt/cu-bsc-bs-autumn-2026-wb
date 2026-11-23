@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { useApp } from '@modelcontextprotocol/ext-apps/react';
 import type { App as McpApp } from '@modelcontextprotocol/ext-apps';
-import { fmt,  meta,  Loading,  useStuckNotice,  Stuck,  ViewHead,  ErrorBox,  Stepper,  type Cart,  useHostTheme } from '../shared';
+import { fmt, Loading,  useStuckNotice,  Stuck,  ViewHead,  ErrorBox,  Stepper,  type Cart,  useHostTheme } from '../shared';
 
 const EMPTY: Cart = { lines: [], total: 0, count: 0 };
 
@@ -13,7 +13,7 @@ function CartView() {
   const [doneId, setDoneId] = useState('');
 
   const { app, error } = useApp({
-    appInfo: { name: 'shop', version: '3.0.0' },
+    appInfo: { name: 'shop', version: '3.1.0' },
     capabilities: {},
     onAppCreated: (a: McpApp) => {
       a.ontoolresult = (res) => {
@@ -25,8 +25,9 @@ function CartView() {
   });
   const stuck = useStuckNotice(!app && !error);
 
-  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   useHostTheme(app);
+
+  if (error) return <div className="muted">Ошибка: {error.message}</div>;
   if (!app) return stuck ? <Stuck /> : <Loading />;
 
   async function upd(id: string, qty: number) {
@@ -49,14 +50,14 @@ function CartView() {
       const res = await app!.callServerTool({ name: 'checkout', arguments: {} });
       if (res.isError) {
         const first = res.content[0];
-        throw new Error(first && first.type === 'text' ? first.text : 'Оплата не прошла');
+        throw new Error(first && first.type === 'text' ? first.text : 'Не удалось перейти к оформлению');
       }
       const sc = res.structuredContent as { order: { id: string } };
       setDoneId(sc.order.id);
       setCart(EMPTY);
       await app!.sendMessage({
         role: 'user',
-        content: [{ type: 'text', text: `Я оплатил корзину, заказ ${sc.order.id}. Покажи статус заказа.` }],
+        content: [{ type: 'text', text: `Я перешёл к оформлению в WB, заказ ${sc.order.id}. Покажи статус заказа.` }],
       });
     } catch (e) {
       setErr(e instanceof Error ? e.message : String(e));
@@ -74,7 +75,7 @@ function CartView() {
       {doneId && (
         <div className="panel">
           <div className="muted">
-            Заказ {doneId} оплачен (тест). Статус — попросите показать заказы.
+            Корзина передана в оформление WB, заказ {doneId} (тест). Статус — попросите показать заказ.
           </div>
         </div>
       )}
@@ -99,16 +100,16 @@ function CartView() {
           ))}
           <div className="savings">
             <span>Выгода по скидкам</span>
-            <span>−{fmt(cart.lines.reduce((n, l) => n + (meta(l).old - l.price) * l.qty, 0))}</span>
+            <span>−{fmt(cart.lines.reduce((n, l) => n + (l.oldPrice - l.price) * l.qty, 0))}</span>
           </div>
           <div className="total">
             <span>Итого</span>
             <span className="total-value">{fmt(cart.total)}</span>
           </div>
           <button className="btn" disabled={busy} onClick={pay}>
-            {busy ? 'Оплата…' : `Оплатить · ${fmt(cart.total)}`}
+            {busy ? 'Передаём в WB…' : `Перейти к оформлению в WB · ${fmt(cart.total)}`}
           </button>
-          <p className="note">Тестовый режим: деньги не списываются</p>
+          <p className="note">Подтверждение, оплата и чек — на стороне WB. Тестовый режим: переход имитируется, деньги не списываются</p>
           {err && <ErrorBox message={err} />}
         </div>
       )}

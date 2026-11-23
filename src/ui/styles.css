@@ -433,3 +433,15 @@ img { max-width: 100%; }
 .timeline-step,
 .product-body,
 .card-info { min-width: 0; }
+
+/* ---------- Подбор по условиям (ДЗ 3.1) ---------- */
+.conditions, .checks { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.conditions { margin: 0 0 10px; }
+.condition { font-size: 12.5px; font-weight: 600; color: var(--pill-ink); background: var(--pill-bg); border-radius: 999px; padding: 3px 10px; }
+.notice { font-size: 13px; color: var(--warn); background: light-dark(#fff6e8, #3a2a14); border-radius: 10px; padding: 9px 11px; margin: 0 0 10px; }
+.checks { margin: 6px 0 8px; gap: 4px; }
+.check { font-size: 11.5px; line-height: 1.3; border-radius: 6px; padding: 2px 6px; }
+.check-ok { color: var(--mock-ink); background: var(--mock-bg); }
+.check-fail { color: var(--err); background: var(--err-bg); font-weight: 600; }
+.check-unknown { color: var(--muted); background: var(--control-bg); }
+.product-card-near { outline: 1px dashed var(--track); outline-offset: -1px; }

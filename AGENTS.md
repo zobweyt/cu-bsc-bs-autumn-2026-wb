@@ -7,4 +7,7 @@ React (только гостевые вьюхи в `src/ui/views/*.tsx`). Тол
 - Тулы по доменам: `src/mcp/tools/{search,cart,orders,stats}.ts`; схемы в `src/mcp/schemas.ts`.
 - Ресурсы: `src/mcp/resources.ts` (читает `dist/ui/*.html` с диска).
 - Стор: `src/store/{cart,orders,metrics,format,catalog}.ts`; данные: `src/store/data.json`.
+- Поиск по условиям и проверки ✓/✗: `src/store/catalog.ts`, тесты — `src/store/catalog.test.ts` (`bun test`).
+- Перед коммитом: `bun run check` (сборка UI + tsc + тесты).
+- Граница MVP: `checkout` только передаёт корзину в оформление WB (имитация); оплату в чат не переносить.
 - Вьюхи: `src/ui/views/*.tsx` → `dist/ui/*.html` (`bun run build:ui`).
